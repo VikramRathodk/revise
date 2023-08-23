@@ -4,9 +4,9 @@ public class CustomLinkedList {
 
     Node head;
 
-    class Node {
-        int val;
-        Node next;
+    public class Node {
+        public int val;
+         public Node next;
 
         Node(int data) {
             this.val = data;
@@ -20,6 +20,10 @@ public class CustomLinkedList {
         head = newNode;
 
     }
+
+    public Node getHeadNode(){
+        return head;
+    } 
 
     public void add(int data) {
         Node newNode = new Node(data);
