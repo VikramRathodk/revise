@@ -14,7 +14,6 @@ public class DetectLoopLinkedList {
     list.add(10);
     list.printList();
     CustomLinkedList.Node headNode = list.getHeadNode();
-    System.out.println(headNode.val);
 
     if (headNode != null) {
         CustomLinkedList.Node currentNode = headNode;
