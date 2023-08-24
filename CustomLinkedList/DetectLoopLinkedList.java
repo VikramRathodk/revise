@@ -12,7 +12,10 @@ public class DetectLoopLinkedList {
     list.add(52);
     list.add(10);
     list.add(10);
+
+    //print the list data
     list.printList();
+    //getting the headNode from CustomLinkedList class
     CustomLinkedList.Node headNode = list.getHeadNode();
 
     if (headNode != null) {
@@ -23,8 +26,8 @@ public class DetectLoopLinkedList {
         currentNode.next = headNode.next; // Creating the cycle
     }
 
-
     System.out.println(hasLoop(headNode));
+
 }
   private static boolean hasLoop(CustomLinkedList.Node  head) {
       if (head == null)
